@@ -51,11 +51,11 @@
 <body>
     <div class="relative bg-gradient-to-bl from-dark-gray to-dark-purple">
         <!-- top nav bar -->
-        <nav class="flex flex-row gap-12 h-14 sticky top-0 p-4 justify-between bg-gray-900">
+        <nav class="flex flex-row gap-12 h-14 sticky top-0 p-4 justify-between bg-gray-900 z-40">
             <!-- left side -->
             <div class="flex flex-row justify-start">
                 <!-- logo -->
-                <span class="text-slate-300 font-bold antialiased text-base pr-4 tracking-wide uppercase">|group<span
+                <span class="text-gray-300 fontgray antialiasegrayt-base pr-4 tracking-wide uppercase">|group<span
                         class="font-black text-slate-500">|</span>18|</span>
                 <!-- select -->
                 <div class="overflow-hidden h-10 ml-4">
@@ -228,7 +228,7 @@
                             <div class="h-12 xl:mt-36 md:mt-16">
                                 <select name="companys"
                                     class="xl:w-80 md:w-60 pl-2 bg-gray-700 rounded-lg text-slate-400 text-xs h-8">
-                                    <option value="" disabled selected>Select a company</option>
+                                    <option value="" disabled selected>company name</option>
                                     <option value="">Zain</option>
                                     <option value="">MS</option>
                                     <option value="">Google</option>
@@ -260,7 +260,7 @@
                             </div>
                             <!-- results card -->
                             <div
-                                class="flex flex-col w-80 h-full mt-10 rounded-xl bg-gray-800/90 overflow-hidden md:ml-4">
+                                class="flex flex-col w-80 h-full mt-10  rounded-xl bg-gray-800/90  md:ml-4">
                                 <!-- header -->
                                 <div class="basis-1/4 items-center h-full rounded">
                                     <!-- header text -->
@@ -328,7 +328,7 @@
                                     </div>
                                 </div>
                                 <!-- no3 -->
-                                <div class="flex flex-col basis-1/4 border-l-4 border-purple-900">
+                                <div class="flex flex-col basis-1/4 border-l-4 pb-20 border-purple-900">
                                     <span class="text-white text-xl font-black pl-2">Digital foot prints</span>
                                     <p class="text-white text-lg font-thin pl-2">
                                         detected problem text text
@@ -339,10 +339,13 @@
                         <!-- right side -->
                         <div class="basis-4/5 flex flex-col">
                             <!-- top -->
-                            <div class="flex flex-col basis-1/8">
+                            <div class="flex flex-col basis-1/8 mr-6 relative">
                                 <!-- chart  -->
-                                <div class="bg-gradient-to-b from-gray-600 to-gray-900 w-full h-16 mt-10 md:pb-4" style="clip-path: polygon(34% 56%, 48% 49%, 57% 5%, 68% 41%, 90% 50%, 100% 100%, 21% 99%, 0 100%, 4% 57%, 18% 65%);"></div>
-                                <div class="flex flex-row justify-evenly text-white mt-2 font-thin">
+                                <div class="bg-gradient-to-b from-gray-600 to-gray-900 w-full xl:h-16 md:h-10 mt-10 md:pb-4 " style="clip-path: polygon(34% 56%, 48% 49%, 57% 5%, 68% 41%, 90% 50%, 100% 100%, 21% 99%, 0 100%, 4% 57%, 18% 65%);">
+                                </div>
+                                <div class="xl:h-10 md:pb-10 w-1 absolute right-4 xl:mt-16 md:mt-10 mr-24 bg-blue-300"></div>
+
+                                <div class="flex flex-row justify-between text-white mt-2 font-thin ">
                                     <span class="text-xs">2015</span>
                                     <span class="text-xs">2016</span>
                                     <span class="text-xs">2017</span>
@@ -350,7 +353,7 @@
                                     <span class="text-xs">2019</span>
                                     <span class="text-xs">2020</span>
                                     <span class="text-xs">2021</span>
-                                    <span class="text-xs">2022</span>
+                                    <span class="text-xs pl-4">2022</span>
                                 </div>
                             </div>
                             <!-- bottom -->
@@ -382,30 +385,160 @@
                                     <!-- header  -->
                                     <div class="flex flex-row justify-between basis-1/7 pt-3 ">
                                         <!-- left  -->
-                                        <div class="font-blod capitalize text-white xl:text-2xl md:text-lg">
+                                        <div class="font-black capitalize text-white xl:text-3xl md:text-lg">
                                             current issues
                                         </div>
                                         <!-- right  -->
                                         <div class="flex flex-row-reverse pr-4">
-                                            <hi class="xl:text-2xl md:text-lg text-white ml-10">Discovered assets</hi>
+                                            <hi class="font-black xl:text-3xl md:text-lg text-white ml-10">Discovered assets</hi>
                                             <div class="flex flex-row">
                                                 <span class="text-white xl:text-sm mr-4 pt-2 md:text-xs ">Quick
                                                     filters:</span>
                                                 <!-- buttons -->
                                                 <span
-                                                    class="bg-gray-800 text-red-800 text-sm font-medium mr-2 px-2.5 py-2 rounded-2xl cursor-pointer">Errors
+                                                    class="bg-gray-800 text-red-800 text-sm font-medium mr-2 px-2.5 py-2 rounded-2xl cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gray-700 duration-300 ">Errors
                                                     8</span>
                                                 <span
-                                                    class="bg-gray-800 text-green-800 text-sm font-medium mr-2 px-2.5 py-2 rounded-2xl cursor-pointer">Good
+                                                    class="bg-gray-800 text-green-800 text-sm font-medium mr-2 px-2.5 py-2 rounded-2xl cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gray-700 duration-300 ">Good
                                                     543</span>
                                                 <span
-                                                    class="bg-gray-800 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-2 rounded-2xl cursor-pointer">Worrings
+                                                    class="bg-gray-800 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-2 rounded-2xl cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-gray-700 duration-300 ">Worrings
                                                     13</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="basis-6/7">
-                                        <!-- TODO: -->
+                                    <!-- cards  -->
+                                    <div class="flex flex-row-3  flex-wrap basis-6/7 mt-2 mr-4">
+                                        <!-- colum no1 -->
+                                        <div class="flex flex-col pt-2 px-4 justify-start  basis-1/4 ">
+                                            <!-- red card  -->
+                                            <div class="bg-gradient-to-bl from-gray-900 via-rose-900/50 to-rose-900 xl:py-32 md:py-24 my-2 xl:rounded-[40px] md:rounded-[25px] relative">
+                                                <div class="absolute top-10 left-10">
+                                                    <h1 class=" xl:text-6xl md:text-4xl font-extrabold text-red-500">5.2</h1>
+                                                    <p class="ml-1 xl:text-sm md:text-[9px] text-blue-200 ">Vulnerabilities</p>
+                                                </div>
+                                                <div class="flex flex-row absolute bottom-7 left-10">
+                                                    <span class="bg-red-500 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0  rounded-full ">3</span>
+                                                    <span class="bg-yellow-200 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0  rounded-full ">1</span>
+                                                    <span class="bg-green-300 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0  rounded-full ">123</span>
+                                                </div>
+                                            
+                                            </div>
+                                            <!-- light red card  -->
+                                            <div class="bg-gradient-to-b from-orange-900 via-orange-700 to-orange-400 xl:py-32 md:py-24 my-2 xl:rounded-[40px] md:rounded-[25px] relative">
+                                                <div class="absolute top-10 left-10">
+                                                    <h1 class=" xl:text-6xl md:text-4xl font-extrabold text-yellow-200">7.2</h1>
+                                                    <p class="ml-1 xltext-sm md:text-[9px] text-blue-200 ">Vulnerabilities</p>
+                                                </div>
+                                                <div class="flex flex-row absolute bottom-7 left-10">
+                                                    <span class="bg-yellow-200 text-black text-sm font-medium mr-2 xl:px-3 xl:py-2 md:px-1.5 md:py-0 rounded-full ">3</span>
+                                                    <span class="bg-green-300 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-2 md:px-1.5 md:py-0 rounded-full ">83</span>
+                                                </div>
+                                            </div>
+                                            <!-- dark gray card  -->
+                                            <div class="bg-gradient-to-b from-gray-700/70 via-gray-700/80 to-gray-700 xl:py-32  md:py-24 my-2 xl:rounded-[40px] md:rounded-[25px] relative">
+                                                <div class="absolute top-10 left-10">
+                                                    <h1 class=" xl:text-6xl  md:text-4xl font-extrabold text-emerald-200">5.2</h1>
+                                                    <p class="ml-1 xl:text-sm md:text-[9px] text-blue-200 ">Vulnerabilities</p>
+                                                </div>
+                                                <div class="flex flex-row absolute bottom-7 left-10">
+                                                    <span class="bg-red-500 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0 rounded-full ">3</span>
+                                                    <span class="bg-yellow-200 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0 rounded-full ">1</span>
+                                                    <span class="bg-green-300 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0 rounded-full ">123</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- colum no2 -->
+                                        <div class="flex flex-col pt-2 px-4 justify-start  basis-1/4">
+                                            <!-- light red card  -->
+                                            <div class="bg-gradient-to-b from-orange-900 via-orange-700 to-orange-400 xl:py-32 md:py-24 my-2 xl:rounded-[40px] md:rounded-[25px] relative">
+                                                <div class="absolute top-10 left-10">
+                                                    <h1 class=" xl:text-6xl md:text-4xl font-extrabold text-yellow-200">6.7</h1>
+                                                    <p class="ml-1 xl:text-sm md:text-[9px] text-blue-200 ">Vulnerabilities</p>
+                                                </div>
+                                                <div class="flex flex-row absolute bottom-7 left-10">
+                                                    <span class="bg-red-500 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0 rounded-full ">3</span>
+                                                    <span class="bg-yellow-200 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0 rounded-full ">1</span>
+                                                    <span class="bg-green-300 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0 rounded-full ">723</span>
+                                                </div>
+                                            </div>
+                                            <!-- dark gray card  -->
+                                            <div class="bg-gradient-to-b from-gray-700/70 via-gray-700/80 to-gray-700 xl:py-32 md:py-24 my-2 xl:rounded-[40px] md:rounded-[25px] relative">
+                                                <div class="absolute top-10 left-10">
+                                                    <h1 class=" xl:text-6xl md:text-4xl font-extrabold text-emerald-200">9.9</h1>
+                                                    <p class="ml-1 xl:text-sm  md:text-[9px] text-blue-200 ">Vulnerabilities</p>
+                                                </div>
+                                                <div class="flex flex-row absolute bottom-7 left-10">
+                                                    <span class="bg-green-300 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0 rounded-full ">123</span>
+                                                </div>
+                                            </div>
+                                            <!-- dark gray card  -->
+                                            <div class="bg-gradient-to-b from-gray-700/70 via-gray-700/80 to-gray-700 xl:py-32 md:py-24 my-2 xl:rounded-[40px] md:rounded-[25px] relative">
+                                                <div class="absolute top-10 left-10">
+                                                    <h1 class=" xl:text-6xl md:text-4xl font-extrabold text-emerald-200">8.7</h1>
+                                                    <p class="ml-1 xl:text-sm md:text-[9px] text-blue-200 ">Vulnerabilities</p>
+                                                </div>
+                                                <div class="flex flex-row absolute bottom-7 left-10">
+                                                    <span class="bg-red-500 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0  rounded-full ">1</span>
+                                                    <span class="bg-green-300 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1 md:px-1.5 md:py-0  rounded-full ">123</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- colum no3 -->
+                                        <div class="flex flex-col pt-2 px-4 justify-start  basis-1/4">
+                                            <!-- dark gray card  -->
+                                            <div class="bg-gradient-to-b from-gray-700/70 via-gray-700/80 to-gray-700 xl:py-32 md:py-24 my-2 xl:rounded-[40px] md:rounded-[25px] relative">
+                                                <div class="absolute top-10 left-10">
+                                                    <h1 class=" xl:text-6xl md:text-4xl font-extrabold text-emerald-200">9.2</h1>
+                                                    <p class="ml-1 xl:text-sm md:text-[9px] text-blue-200 ">Vulnerabilities</p>
+                                                </div>
+                                                <div class="flex flex-row absolute bottom-7 left-10">
+                                                    <span class="bg-green-300 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1  md:px-1.5 md:py-0 rounded-full ">123</span>
+                                                </div>
+                                            </div>
+                                            <!-- dark gray card  -->
+                                            <div class="bg-gradient-to-b from-gray-700/70 via-gray-700/80 to-gray-700 xl:py-32 md:py-24 my-2 xl:rounded-[40px] md:rounded-[25px] relative">
+                                                <div class="absolute top-10 left-10">
+                                                    <h1 class=" xl:text-6xl md:text-4xl font-extrabold text-emerald-200">8.2</h1>
+                                                    <p class="ml-1 xl:text-sm md:text-[9px] text-blue-200 ">Vulnerabilities</p>
+                                                </div>
+                                                <div class="flex flex-row absolute bottom-7 left-10">
+                                                    <span class="bg-yellow-200 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1  md:px-1.5 md:py-0 rounded-full ">8</span>
+                                                    <span class="bg-green-300 text-black text-sm font-medium mr-2 xl:px-2.5 xl:py-1  md:px-1.5 md:py-0 rounded-full ">123</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- colum no4 -->
+                                        <div class="flex flex-col pt-2 px-2 pr-12 justify-start  basis-1/4">
+                                            <!-- green cards  -->
+                                            <!-- no1 -->
+                                            <div class="flex flex-col bg-emerald-900  my-2 xl:py-24 xl:rounded-[40px] md:py-16 md:rounded-[25px] relative overflow-hidden">
+                                               <div class=" ml-6 text-emerald-200 absolute xl:top-8 xl:left-4 md:top-6 md:left-2">
+                                                <h1 class=" xl:text-5xl md:text-4xl font-extrabold">48</h1>
+                                                <p class="ml-2 xl:text-lg md:text-sm text-blue-200 ">ssl</p>
+                                               </div>
+                                               <div class=" bg-emerald-200 xl:w-80  h-14  absolute xl:bottom-8 md:w-40 md:bottom-4 " style="clip-path: polygon(27% 87%, 53% 68%, 99% 76%, 100% 86%, 54% 74%, 28% 92%, 17% 87%, 0 63%, 0 56%, 18% 81%);"></div> 
+                                            </div>
+                                            <!-- no2 -->
+                                            <div class="flex flex-col bg-emerald-900  my-2 xl:py-24 xl:rounded-[40px] md:py-16 md:rounded-[25px] relative overflow-hidden">
+                                                <div class="basis-1/3 ml-6 text-emerald-200 absolute xl:top-8 xl:left-4 md:top-6 md:left-2">
+                                                 <h1 class=" xl:text-5xl md:text-4xl font-extrabold">79</h1>
+                                                 <p class="ml-2 xl:text-lg md:text-sm text-blue-200 ">IP</p>
+                                                </div>
+                                                <div class="basis-1/3 bg-emerald-200 xl:w-80 h-14  absolute xl:bottom-8 md:w-40 md:bottom-4" style="clip-path: polygon(27% 87%, 53% 68%, 99% 76%, 100% 86%, 54% 74%, 28% 92%, 17% 87%, 0 63%, 0 56%, 18% 81%);"></div> 
+                                                 
+                                             </div>
+                                             <!-- no3 -->
+                                             <div class="flex flex-col bg-emerald-900  my-2 xl:py-24 xl:rounded-[40px] md:py-16 md:rounded-[25px] relative overflow-hidden">
+                                                <div class="basis-1/3 ml-6 text-emerald-200 absolute xl:top-8 xl:left-4 md:top-6 md:left-2">
+                                                 <h1 class=" xl:text-5xl md:text-4xl font-extrabold">301</h1>
+                                                 <p class="ml-2 xl:text-lg md:text-sm text-blue-200 ">Domain</p>
+                                                </div>
+                                                <div class="basis-1/3 bg-emerald-200 xl:w-80 h-14  absolute xl:bottom-8 md:w-40 md:bottom-4" style="clip-path: polygon(27% 87%, 53% 68%, 99% 76%, 100% 86%, 54% 74%, 28% 92%, 17% 87%, 0 63%, 0 56%, 18% 81%); "></div> 
+                                             </div>
+
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
